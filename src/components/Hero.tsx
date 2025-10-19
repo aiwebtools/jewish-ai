@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Sparkles, BookOpen } from "lucide-react";
 import heroStar from "@/assets/hero-star.jpg";
+import StarOfDavid from "@/components/StarOfDavid";
 
 const Hero = () => {
   return (
@@ -24,9 +25,22 @@ const Hero = () => {
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-4">
             Explore ancient wisdom through cutting-edge AI technology
           </p>
-          <p className="text-lg text-accent glow-text-accent">
+          <p className="text-lg text-accent glow-text-accent mb-8">
             Powered by the latest ChatGPT technology
           </p>
+          
+          {/* Glowing animated Star of David */}
+          <div className="flex justify-center mb-8">
+            <div className="relative">
+              <StarOfDavid 
+                className="w-24 h-24 md:w-32 md:h-32 animate-float" 
+                animated 
+              />
+              <div className="absolute inset-0 animate-glow-pulse opacity-50">
+                <StarOfDavid className="w-24 h-24 md:w-32 md:h-32 blur-xl" animated />
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">

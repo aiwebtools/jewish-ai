@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Star } from "lucide-react";
+import StarOfDavid from "@/components/StarOfDavid";
 
 const Header = () => {
   const scrollToSection = (id: string) => {
@@ -12,7 +12,7 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between flex-wrap gap-4">
           <div className="flex items-center gap-2">
-            <Star className="w-8 h-8 text-primary animate-glow-pulse" />
+            <StarOfDavid className="w-8 h-8 text-primary animate-glow-pulse" animated />
             <div>
               <h1 className="text-xl font-bold glow-text-primary">Jewish AI Hub</h1>
               <a 
