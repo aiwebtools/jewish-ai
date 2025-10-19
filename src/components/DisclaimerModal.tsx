@@ -30,52 +30,35 @@ const DisclaimerModal = () => {
 
   return (
     <Dialog open={open} onOpenChange={() => {}}>
-      <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto elevated-glow bg-card border-2 border-primary/30">
+      <DialogContent className="max-w-md max-h-[70vh] overflow-y-auto elevated-glow bg-card border-2 border-primary/30">
         <DialogHeader>
-          <DialogTitle className="text-2xl glow-text-primary">Important Disclaimer</DialogTitle>
-          <DialogDescription className="text-base">
-            Please read and agree to continue
+          <DialogTitle className="text-xl glow-text-primary">Important Notice</DialogTitle>
+          <DialogDescription className="text-sm">
+            Please acknowledge before continuing
           </DialogDescription>
         </DialogHeader>
         
-        <div className="space-y-4 text-sm">
-          <p className="text-foreground">
-            Welcome to the Jewish Educational AI Hub. Before proceeding, please acknowledge the following:
-          </p>
-          
-          <div className="space-y-2 bg-muted/50 p-4 rounded-lg">
-            <h4 className="font-bold text-accent">Educational & Informational Use Only</h4>
+        <div className="space-y-3 text-xs">
+          <div className="space-y-1 bg-muted/50 p-3 rounded-lg">
+            <h4 className="font-bold text-accent text-sm">Educational Use Only</h4>
             <p className="text-muted-foreground">
-              These AI tools (Torah GPT and Pre-Roman Kabbalah GPT) are provided strictly for educational, 
-              informational, and self-exploration purposes. They are not substitutes for traditional study 
-              with qualified teachers or rabbis.
+              These AI tools are for educational and informational purposes. Not a substitute for qualified teachers or rabbis.
             </p>
           </div>
 
-          <div className="space-y-2 bg-muted/50 p-4 rounded-lg">
-            <h4 className="font-bold text-primary">Limitation of Liability</h4>
+          <div className="space-y-1 bg-muted/50 p-3 rounded-lg">
+            <h4 className="font-bold text-primary text-sm">No Liability</h4>
             <p className="text-muted-foreground">
-              AI WEB TOOLS LLC makes no warranties regarding accuracy or completeness of information. 
-              Users assume full responsibility for how they use the information provided. These tools 
-              should not be used for religious decisions or halachic rulings.
+              AI WEB TOOLS LLC makes no warranties. Users assume full responsibility. Not for religious decisions.
             </p>
           </div>
 
-          <div className="space-y-2 bg-muted/50 p-4 rounded-lg">
-            <h4 className="font-bold text-secondary">Consult Qualified Authorities</h4>
-            <p className="text-muted-foreground">
-              For religious rulings, spiritual guidance, or important life decisions, always consult 
-              with qualified rabbis, scholars, or religious authorities.
-            </p>
-          </div>
-
-          <p className="text-muted-foreground">
-            By continuing, you acknowledge that you have read and understood this disclaimer and agree 
-            to use these tools for educational and exploratory purposes only.
+          <p className="text-muted-foreground text-center">
+            For religious rulings, consult qualified authorities.
           </p>
         </div>
 
-        <div className="flex items-center space-x-2 py-4">
+        <div className="flex items-center space-x-2 py-3">
           <Checkbox 
             id="agree" 
             checked={agreed} 
@@ -83,9 +66,9 @@ const DisclaimerModal = () => {
           />
           <label
             htmlFor="agree"
-            className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer"
+            className="text-xs font-medium leading-none cursor-pointer"
           >
-            I have read and agree to the terms and disclaimer
+            I agree - Educational purposes only
           </label>
         </div>
 
@@ -95,8 +78,9 @@ const DisclaimerModal = () => {
             onClick={handleAgree} 
             disabled={!agreed}
             className="w-full"
+            size="sm"
           >
-            I AGREE - Continue to Site
+            Continue
           </Button>
         </DialogFooter>
       </DialogContent>

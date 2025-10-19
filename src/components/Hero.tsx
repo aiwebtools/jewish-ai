@@ -30,50 +30,58 @@ const Hero = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {/* Torah GPT Card */}
-          <Card className="p-8 elevated-glow hover:scale-105 transition-transform duration-300 bg-card/50 backdrop-blur-sm border-2 border-primary/30 animate-fade-in-up">
-            <div className="text-center space-y-6">
-              <BookOpen className="w-20 h-20 mx-auto text-secondary animate-float" />
-              <h2 className="text-3xl font-bold glow-text-secondary">Torah GPT</h2>
-              <p className="text-muted-foreground text-lg">
-                Dive deep into Torah wisdom with AI-powered insights. Explore sacred texts, 
-                interpretations, and traditional Jewish teachings through an intelligent 
-                conversational interface.
-              </p>
-              <Button 
-                variant="hero" 
-                size="lg" 
-                className="w-full"
-                asChild
-              >
-                <a href="https://chatgpt.com/g/g-68f0f5ca5af88191b5eb9be8aa45d5f2-torah-gpt" target="_blank" rel="noopener noreferrer">
+          {/* Torah GPT Card - Fully Clickable */}
+          <a 
+            href="https://chatgpt.com/g/g-68f0f5ca5af88191b5eb9be8aa45d5f2-torah-gpt" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="block group"
+          >
+            <Card className="p-8 elevated-glow group-hover:scale-105 transition-transform duration-300 bg-card/50 backdrop-blur-sm border-2 border-primary/30 hover:border-primary/50 animate-fade-in-up cursor-pointer h-full">
+              <div className="text-center space-y-6">
+                <BookOpen className="w-20 h-20 mx-auto text-secondary animate-float" />
+                <h2 className="text-3xl font-bold glow-text-secondary">Torah GPT</h2>
+                <p className="text-muted-foreground text-lg">
+                  Dive deep into Torah wisdom with AI-powered insights. Explore sacred texts, 
+                  interpretations, and traditional Jewish teachings through an intelligent 
+                  conversational interface.
+                </p>
+                <Button 
+                  variant="hero" 
+                  size="lg" 
+                  className="w-full pointer-events-none"
+                >
                   Explore Torah GPT
-                </a>
-              </Button>
-            </div>
-          </Card>
+                </Button>
+              </div>
+            </Card>
+          </a>
 
-          {/* Kabbalah GPT Card */}
-          <Card className="p-8 elevated-glow hover:scale-105 transition-transform duration-300 bg-card/50 backdrop-blur-sm border-2 border-accent/30 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            <div className="text-center space-y-6">
-              <Sparkles className="w-20 h-20 mx-auto text-accent animate-float" style={{ animationDelay: '1s' }} />
-              <h2 className="text-3xl font-bold glow-text-accent">Pre-Roman Kabbalah GPT</h2>
-              <p className="text-muted-foreground text-lg">
-                Unlock mystical Kabbalistic knowledge from the pre-Roman era. Discover ancient 
-                spiritual wisdom, sacred geometry, and esoteric teachings through AI-guided exploration.
-              </p>
-              <Button 
-                variant="hero" 
-                size="lg" 
-                className="w-full"
-                asChild
-              >
-                <a href="https://chatgpt.com/g/g-68c6ea6143748191bed5360219b0b02a-kabbalah-gpt" target="_blank" rel="noopener noreferrer">
+          {/* Kabbalah GPT Card - Fully Clickable */}
+          <a 
+            href="https://chatgpt.com/g/g-68c6ea6143748191bed5360219b0b02a-kabbalah-gpt" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="block group"
+          >
+            <Card className="p-8 elevated-glow group-hover:scale-105 transition-transform duration-300 bg-card/50 backdrop-blur-sm border-2 border-accent/30 hover:border-accent/50 animate-fade-in-up cursor-pointer h-full" style={{ animationDelay: '0.2s' }}>
+              <div className="text-center space-y-6">
+                <Sparkles className="w-20 h-20 mx-auto text-accent animate-float" style={{ animationDelay: '1s' }} />
+                <h2 className="text-3xl font-bold glow-text-accent">Pre-Roman Kabbalah GPT</h2>
+                <p className="text-muted-foreground text-lg">
+                  Unlock mystical Kabbalistic knowledge from the pre-Roman era. Discover ancient 
+                  spiritual wisdom, sacred geometry, and esoteric teachings through AI-guided exploration.
+                </p>
+                <Button 
+                  variant="hero" 
+                  size="lg" 
+                  className="w-full pointer-events-none"
+                >
                   Explore Kabbalah GPT
-                </a>
-              </Button>
-            </div>
-          </Card>
+                </Button>
+              </div>
+            </Card>
+          </a>
         </div>
 
         <div className="text-center mt-12 animate-fade-in" style={{ animationDelay: '0.4s' }}>
