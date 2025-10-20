@@ -12,7 +12,7 @@ const Index = () => {
     <div className="min-h-screen">
       <DisclaimerModal />
       <Header />
-      <main className="pt-20">
+      <main className="pt-32 md:pt-24">
         <Hero />
         <HowItWorks />
         <Testimonials />
