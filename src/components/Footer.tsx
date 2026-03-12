@@ -88,7 +88,7 @@ const Footer = () => {
                 className="p-0 h-auto text-muted-foreground hover:text-accent"
                 asChild
               >
-                <a href="https://aiwebtools.ai/terms-of-services" target="_blank" rel="noopener noreferrer">
+                <a href="https://aiwebtools.lovable.app/terms-of-services?via=aiwebtools" target="_blank" rel="noopener noreferrer">
                   Terms of Service
                 </a>
               </Button>
