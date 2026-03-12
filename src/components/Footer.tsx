@@ -121,7 +121,7 @@ const Footer = () => {
           <p className="text-sm text-muted-foreground text-center md:text-left">
             © 2025-∞{" "}
             <a 
-              href="https://www.aiwebtools.ai" 
+              href="https://aiwebtools.lovable.app/?via=aiwebtools" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-primary hover:underline"
